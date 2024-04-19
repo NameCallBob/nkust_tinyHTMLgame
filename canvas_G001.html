@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Catch the monster 咖其樂蔴施特</title><link rel="icon" type="image/ico" href="asword.ico" />
+    <style>
+      /* /* body{font-family: "微軟正黑體";font-size: 16px;}
+      
+      /* 遊戲說明 */
+      .imagea{
+        background-size: auto;
+        width: 20%;
+        height: 30%;
+        background-image: url('images/bg_boss.png');
+        position: relative;top:10%;right: 10%;
+        background-repeat: no-repeat;}
+      .imageb{
+        background-size: auto;
+        width: 20%;
+        height: 30%;
+        background-image: url('images/bg_boss.png');
+        position: relative;top:10%;right: 20%;
+        background-repeat: no-repeat;}
+      .imagec{
+        background-size: auto;
+        width: 20%;
+        height: 30%;
+        background-image: url('images/bg_boss.png');
+        position: relative;left: -10cm;
+        background-repeat: no-repeat;}
+      .imaged{
+        background-size: auto;
+        width: 20%;
+        height: 30%;
+        background-image: url('images/bg_boss.png');
+        position: relative;left: 10%;top: -10cm;
+        background-repeat: no-repeat;}
+      .ao{
+        font-size: 12px;
+      }
+      /* .back_login{
+        position: relative;
+        top: 8%;left: 0%;
+      } */
+      .bg_boss{
+        width: 20%;
+        height: 30%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        top: 53%;
+        left: 70%;
+
+        background-image: url('images/bg_boss.png');
+      }
+      .bg_hero{
+        width: 20%;
+        height: 30%;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-image: url('images/勇士.png');
+        position: absolute;
+        top:50%;
+        left:10%;
+      }
+      .floor{
+        background-image: url('images/brick.jpg');
+        position: absolute;
+        width:100%;
+        height: 5%;
+        left:0;
+        bottom: 0;
+      }
+      .backtomainpage{
+    width: 40px;
+    height: 150px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: rgb(4, 55, 85);
+    background-color: transparent;
+    border: 1px solid #000;
+    position: relative;
+    transition: all .3s linear;
+    position: fixed; bottom: 40%;
+}
+
+.backtomainpage > p{
+    position: fixed; bottom: 37.5% ;left :0.5cm;
+    z-index: 1;
+}
+.backtomainpage::before{
+    content: "";
+    width: 100%;
+    height: 0%;
+    display: block;
+    background-color: rgb(224, 143, 143);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+.backtomainpage:hover{
+    color: #fff;
+}
+.backtomainpage:hover::before{
+    height: 100%;
+}
+  audio{display: none;}
+      
+    </style>
+  </head>
+  <body align = "center">
+    <h2>咖其樂蔴施特</h1>
+      <p>遊戲說明</p>
+      <p>遊戲計時30秒，玩家要在30秒內擊殺小怪跟BOSS，贏得勝利</p>
+      <p>大寫的W A S D 與 ⇦ ⇧ ⇩ ⇨ 來操控敵人 </p>
+      <p>按住shift可以向前衝刺，但有一秒的冷卻時間</p>
+      
+      <!-- <img src="images/gamepageIMAGE/M1.png"class="imagea" alt=""><img src="images/gamepageIMAGE/M2.png"  class="imageb" alt=""><img src="images/gamepageIMAGE/M3.png" class="imagec" alt=""><img src="images/gamepageIMAGE/M4.png"class="imaged" alt=""> -->
+    <!-- <div class=back_login>
+      <button style="background-color: transparent;border:2px #ff0000 dashed"><a href='homepage.html'>回到登入畫面</a></button>
+    </div> -->
+    <script src="canvas_game001.js"> 
+    // window.onload(playsound())
+    // function playsound(){
+    //   let a = document.getElementById("aud")
+    //   if (a.paused){
+    //     a . paused = false;
+    //     a.play();
+    //   }
+    // }
+    </script>
+    <div class='bg_boss'></div><div class="imagea"></div><div class="imageb"></div><div class="imagec"></div><div class="imaged"></div>
+    <div class='bg_hero'></div>
+    <div class='floor'></div>
+    <!-- <audio id="aud" src="backgroundmusic.mp4" autoplay ></audio> -->
+    <a href="期末作業 - 遊客.html"><div class="backtomainpage"><p>回<br>到<br>首<br>頁</p></div></a>
+
+  </body>
+</html>
